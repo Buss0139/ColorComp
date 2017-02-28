@@ -1,0 +1,139 @@
+
+.container {
+
+}
+/*Banner/navigation layout*/
+
+.banner {
+	padding: 25px;
+	display: flex;
+	flex-direction: row;
+	background-color: #0C2E2B;
+	justify-content: space-between;;
+	align-items: flex-end;
+	/*margin:auto;*/
+}
+
+.title h1{
+	font-family:'Libre Baskerville';
+	font-style: italic;
+	line-height: .9;
+	color: #A1B2A8;
+	margin: 0px;
+}
+
+h6 {			/*"User experience research and design"*/
+	margin: .75em 0 0 0;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: .35em;
+	/** color: #A1B2A8; **/
+	color: #fff;
+}
+
+/*Navigation*/
+.navigation{
+	display:flex;
+	align-items: flex-end;
+}
+
+.navigation ul{
+	list-style: none;
+	display:flex;
+	justify-content: flex-end;
+  	align-items: flex-end;
+ 	margin:auto;
+	margin-bottom: 0px;
+}
+
+.navigation li{
+	padding-left:2rem;
+	margin: 0px;
+	font-family:'Muli';
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #A1B2A8;
+}
+
+.navigation li:hover{
+	color:#A8B301;
+}
+
+/*Callout Text*/
+h2{
+	font-size: 2em;
+	font-style: italic;
+	font-weight: 200;
+	line-height: 1.7em;
+	padding: 0em 1.5em 0em 1.5em;
+}
+
+h3{
+	font-family:'Libre Baskerville';
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 1.75em;
+
+}
+
+/*Method layout*/
+
+.img {
+	height:100px;
+	width: auto;
+	margin: 0;
+	background: #f4dcc1;
+}
+
+h5{
+	font-family:'Libre Baskerville';
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 0em 0em .75em 0em;
+}
+.method h5 {
+	color:#A8B301;
+}
+
+#method-title{
+	color:#A8B301;
+	}
+
+/*Work layout*/
+	.sub-header h4{
+		font-family:'Muli';
+		font-weight: 800;
+		text-transform: uppercase;
+		/** font-size:1.25em; **/
+		color: #888;
+	}
+
+/*Contact Layout*/
+
+
+/*Colors*/
+.body-section-1 {
+	background-color: #A1B2A8;
+}
+
+.body-section-3 {
+	background-color:#FFF6E1;
+}
+
+.accent1 {
+	   border-top: 4px solid #FF4C4E;
+		 margin: 0px;
+}
+
+.accent2 {
+	   border-top: 4px solid #A8B301;
+		 margin: 0px;
+}
+
+.accent3 {
+	   border-top: 4px solid #FF4C4E;
+		 margin: 0px;
+}

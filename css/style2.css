@@ -1,0 +1,151 @@
+
+
+#styleButtons {
+	position: absolute;
+	display: inline-flex;
+	top: 100px;
+	left: 0px;
+	transform: rotate(90deg);
+}
+
+#style1Button, #style2Button {
+	margin: 2px;
+	padding: 10px;
+	background-color: #0B3B61;
+	color: #fff;
+	border: 1px;
+	font-size: 1.4em;
+	font-family: 'open sans';
+}
+
+
+
+.container {
+	margin-bottom: 5vh;
+}
+
+.banner {
+	padding: 25px;
+	display: flex;
+	flex-direction: row;
+	background-color: #0C2E2B;
+	justify-content: space-between;;
+	align-items: flex-end;
+	/*margin:auto;*/
+
+}
+
+.title{
+	/* flex-grow:3; */
+	/* margin: auto;  Magic! */
+}
+
+.title h1{
+	font-family:'Roboto Slab';
+
+	font-style: bold;
+	line-height: 1;
+	color: #FFF;
+	margin: 0px;
+	letter-spacing: .05em
+}
+/** navigation **/
+.navigation{
+	display:flex;
+	align-items: flex-end;
+
+}
+
+.navigation ul{
+	list-style: none;
+	display:flex;
+	justify-content: flex-end;
+  align-items: flex-end;
+  margin:auto;
+	margin-bottom: 0px;
+}
+.navigation li{
+	padding-left:2rem;
+	margin: 0px;
+	font-family:'Roboto';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	color: #FFF;
+}
+
+.navigation li:hover{
+	color:#D78987;
+}
+
+/** fonts **/
+.big-text {
+	font-family:'Roboto';
+	font-weight: 100;
+	font-style: italic;
+}
+
+.sub-header h2{
+	font-family:'Roboto Slab';
+	font-weight: 900;
+/*	font-style: italic; */
+	text-transform: uppercase;
+	font-size:1.25em;
+	color: #627E94;
+}
+
+p{
+	font-family:'Roboto';
+	font-weight: 300;
+}
+
+h3{
+	font-family:'Roboto Slab';
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#627E94;
+	font-size: 1.75em;
+	letter-spacing: .05em
+}
+
+/** method layout **/
+
+.img {
+	height:100px;
+	width: auto;
+	margin: 0;
+	background: #c1c1c1;
+}
+
+
+.method h5 {
+	font-family:'Roboto Slab';
+	font-style: italic;
+	text-transform: uppercase;
+	color:#0C2E2B;
+	font-size: 1em;
+}
+
+/** colors **/
+
+.two{
+	height: 100px;
+}
+.color1{
+	background: #0C2E2B;
+}
+.color2{
+	background: #627E94;
+}
+.color3{
+	background: #C27463
+}
+.color4{
+	background: #0B3B61
+}
+.color5{
+	background: #D78987
+}
+.color6{
+	background: #c1c1c1
+}
