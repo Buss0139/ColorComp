@@ -74,8 +74,8 @@ h3{
 	font-family:'Libre Baskerville';
 	font-style: italic;
 	text-transform: uppercase;
-	font-size: 1.75em;
-
+	font-size: 2em;
+	padding-left: 25px;
 }
 
 /*Method layout*/
@@ -88,8 +88,8 @@ h3{
 }
 
 h5{
-	font-family:'Libre Baskerville';
-	font-style: italic;
+	font-family:'Muli';
+	font-weight: 800;
 	text-transform: uppercase;
 	font-size: 1em;
 	margin: 0em 0em .75em 0em;
@@ -110,6 +110,19 @@ h5{
 		/** font-size:1.25em; **/
 		color: #888;
 	}
+
+div.background {
+  background: url("omulu.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 85%;
+}
+
+div.transbox {
+  background-color: #0C2E2B;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 
 /*Contact Layout*/
 
@@ -136,4 +149,9 @@ h5{
 .accent3 {
 	   border-top: 4px solid #FF4C4E;
 		 margin: 0px;
+}
+
+.footer {
+	background-color:#0C2E2B;
+	height: 15vh;
 }
