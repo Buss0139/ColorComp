@@ -1,0 +1,366 @@
+.container {
+}
+
+.navigation ul{
+	display: none;
+}
+
+#no-mobile{
+	display: none;
+}
+
+.title h1{
+	font-family:'Libre Baskerville';
+	font-style: italic;
+	color: #A1B2A8;
+	margin: 10px;
+}
+
+h2 {
+	font-style: italic;
+	font-weight: 200;
+}
+
+/* MOBILE Banner/navigation layout*/
+.mobile-nav-wrapper{
+	display: flex;
+
+}
+.mobile-nav{
+	height: 25px;
+	width: 33%;
+	border:4px solid #FF645C;
+	text-align: center;
+}
+
+.mobile-nav:hover{
+	background-color: #A1B2A8;
+	color:#A8B301;
+}
+
+.mobile-nav p{
+	font-weight:800;
+}
+
+.title h1{
+	padding: 10px 5px 5px 5px;
+	text-align: center;
+}
+
+.banner{
+		background-color: #0C2E2B;
+}
+
+
+
+
+/*Callout Text*/
+h2{
+	/*padding: 0em 1.5em 0em 1.5em;*/
+}
+
+h6{
+	text-align: center;
+	color:#FFF;
+	margin: 0px 0px 15px 0px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 777px) {
+	#no-mobile{
+		display: block;
+	}
+
+	.mobile-nav-wrapper{
+		display: none;
+	}
+.title h1{
+	text-align: left;
+	}
+	h6{
+		text-align: left;
+	}
+
+	.navigation{
+		display:flex;
+		align-items: center;
+		width: fill;
+	}
+
+	.navigation ul{
+		list-style: none;
+		display:flex;
+		justify-content: flex-end;
+	  align-items: space-between;
+	 	margin:auto;
+		margin: 10px auto 10px auto;
+	}
+
+	.navigation li{
+		padding-left:2rem;
+		margin: 0px;
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: #A1B2A8;
+		justify-content: space-between;
+	}
+	/*.mobile-nav-wrapper{
+		display: flex;
+
+	}*/
+	.mobile-nav{
+		height: 25px;
+		width: 33%;
+		border: 2px solid;
+		text-align: center;
+	}
+/*
+	.navigation{
+		display:block;
+	}
+	.navigation ul{
+		display:visible;
+	}
+	.navigation li{
+		display: visible;
+	}*/
+
+
+	.banner {
+		padding: 25px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+
+	/*Navigation*/
+	.navigation{
+		display:flex;
+		align-items: flex-end;
+	}
+
+	.navigation ul{
+		list-style: none;
+		display:flex;
+		justify-content: flex-end;
+	  align-items: flex-end;
+	 	margin:auto;
+		margin-bottom: 0px;
+	}
+
+	.navigation a {
+		padding-left:2rem;
+		margin: 0px;
+		font-family:'Muli';
+		font-weight: 800;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1em;
+		color: #A1B2A8;
+	}
+
+
+	h6 {			/*"User experience research and design"*/
+		display:block;
+		margin: .75em 0 0 0;
+		font-weight: 800;
+		text-transform: uppercase;
+		/*font-size: 1em;
+		letter-spacing: .35em;*/
+		color: #fff;
+	}
+
+	.title h1{
+		font-family:'Libre Baskerville';
+		font-style: italic;
+		padding: 0;
+		line-height: .9;
+		color: #A1B2A8;
+		margin: 0px;
+	}
+
+}
+/*end media query*/
+
+/*About*/
+#about-title{
+	color: #0C2E2B;
+}
+/*Callout Text*/
+h2 .big-text{
+	font-style: italic;
+	font-weight: 200;
+	padding: 0em 1.5em 0em 1.5em;
+}
+
+.navigation a:hover{
+	color:#A8B301;
+}
+
+h3{
+	font-family:'Libre Baskerville';
+	font-style: italic;
+	text-transform: uppercase;
+	/*font-size: 2em;*/
+	padding-left: 3%;
+}
+
+/*Method layout*/
+
+.img {
+	height:100px;
+	width: auto;
+	margin: 0;
+	background: #f4dcc1;
+}
+
+h5{
+	font-family:'Muli';
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 0em 0em .75em 0em;
+}
+.method h5 {
+	color:#A8B301;
+}
+
+#method-title{
+	color:#A8B301;
+	}
+
+/*Work layout*/
+.work h3, a{
+	color: #FF645C;
+}
+
+	.sub-header h4{
+		font-family:'Muli';
+		font-weight: 800;
+		text-transform: uppercase;
+		/** font-size:1.25em; **/
+		color: #888;
+	}
+
+div.background {
+	height:400px;
+  background: url("roda.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.background-medtracker {
+	height:400px;
+  background: url("mms1_mms1.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div.background-craft {
+	height:400px;
+  background: url("ct-banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+div.transbox{
+	background: url("box-10.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.transbox h3{
+	color: #FFF;
+	margin: 0;
+	padding: 25px;
+	}
+.aligned{
+	margin-left: 0%;
+}
+
+.image_fit{
+width:100%;
+margin-left: 4%;
+}
+
+.image_fit_wide{
+width:100%;
+}
+.image_fit_wide_thumb{
+width:100%;
+max-height: 158px;
+}
+
+/*Contact Layout*/
+.contact{
+	height: 70vh;
+}
+.contact h3 {
+	color: #653C5A;
+}
+
+/*Colors*/
+em {
+	color:#FF645C;
+	font-weight: 800:
+}
+
+#about{
+	background-color: #1C665D;
+	color: #FFF;
+	height: 35px;
+}
+
+#work{
+	background-color:#1C665D;
+	color: #FFF;
+	height: 35px;
+}
+
+#contact{
+	background-color:#1C665D;
+	color: #FFF;
+	height: 35px;
+}
+
+.body-section-1 {
+	background-color: #A1B2A8;
+}
+
+.body-section-3 {
+	background-color:#FFF6E1;
+}
+
+.accent1 {
+	   border-top: 4px solid #FF645C;
+		 margin: 0px;
+}
+
+.accent2 {
+	   border-top: 4px solid #A8B301;
+		 margin: 0px;
+}
+
+.accent3 {
+	   border-top: 4px solid #653C5A;
+		 margin: 0px;
+}
+
+.footer {
+	background-color:#0C2E2B;
+	height: 15vh;
+}

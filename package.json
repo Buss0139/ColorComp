@@ -1,0 +1,25 @@
+{
+  "name": "colorcomp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buss0139/ColorComp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buss0139/ColorComp/issues"
+  },
+  "homepage": "https://github.com/Buss0139/ColorComp#readme",
+  "dependencies": {
+    "express": "^4.15.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}

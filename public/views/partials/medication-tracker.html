@@ -1,0 +1,97 @@
+
+<div class="container sub-header">
+
+  <div class="background-medtracker">
+    <div class="transbox">
+      <h3 class="layover">MyMedSchedule: Online Medication Tracker Evaluation</h3>
+    </div>
+  </div>
+
+      <h4>An evaluation of the features and usabiliity of an online medication tracker.</h4>
+            <h2>
+              Medication compliance is a major issue. It affects patients, health care providers and insurers.
+            </h2>
+            <h2>
+              There are many free, online trackers that claim to make medication tracking easier. However, the complexity of medications, combined with poor user interface makes these trackers less than ideal.
+            </h2>
+
+<div  class="showme" ng-if="showMore">
+          <h4>
+    	   		Heuristic Evaluation and Cognitive Walkthrough
+    	   	</h4>
+
+            <p>I evaluated the medication tracking website <a href="mymedschedule.com"> MyMedSchedule.com</a> to  identify any obvious problem areas that I could zero in on later.</p>
+
+          <div class="row">
+            <div class="one-third column">
+            <img class="image_fit_wide" src = "./images/mms-01.png">
+            </div>
+            <div class="one-third column">
+            <img class="image_fit_wide" src = "./images/mms-02.png">
+            </div>
+            <div class="one-third column">
+            <img class="image_fit_wide" src = "./images/mms-03.png">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="twelve columns aligned">
+              <h4>Potential Problem Areas</h4>
+
+              <h2>There were a number of issues that I identified in the heuristic as potential problem areas.</h2>
+
+              <p>The application only shows the user which step they are on, it doesn’t give the user an overview of how many steps are remaining or what information will be entered at each step. </p>
+              <p>The items in the top menu change depending on which section of the application you are using. Additionally, the checklist is not accessible in the top menu.</p>
+              <p>The application does not confirm with the user that they have completed their task after saving a medication schedule. </p>
+            </div>
+          </div>
+
+          <h4>Evaluation Testing</h4>
+
+            <div class="row">
+
+              <div class="four columns aligned">
+              <p>After completing the heuristic, I created a short "think aloud" usability test to gather more information about the issues with the site.</p>
+              <p>The goal of the testing was to evaluate how easily and successfully do users navigate the medication wizard?</p>
+
+              </div>
+
+              <div class="eight columns aligned">
+              <img class="image_fit" src="./images/mmstasks.png">
+              </div>
+            </div>
+
+
+          <div class="row">
+            <div class="twelve columns aligned">
+              <h4>Major Findings</h4>
+
+              <h2>The tracker did not have sufficient wayfinding, it was hard to tell which step of the process you were in and where you were going next.</h2>
+
+              <h2>Users encountered issues due to confusing labeling.</h2>
+
+              <h2>The text on the site is dense, small and has poor visual hierarchy.</h2>
+            </div>
+          </div>
+
+            <h4>Website Redesign</h4>
+
+              <div class="row">
+
+                <div class="four columns aligned">
+                <p>I created a simple mock up to fix the biggest issues our users experienced - trouble knowing where they were in the application.</p>
+                <p>I replaced the buttons at the top of the screen with a graphic showing the user which step they are on in relation to the other steps in the process.</p>
+                <p> I made the top level of navigation easier to see and consistent across all pages.</p>
+                <p>I also redesigned the "next step" button to be more visible and descriptive.</p>
+                </div>
+
+                <div class="eight columns aligned">
+                <img class="image_fit" src="./images/new_mms-design.png">
+                </div>
+              </div>
+            </div>
+
+                    <a href="#" ng-if="!showMore" ng-click="changeShow()">show more</a>
+
+                    <a href="#" ng-if="showMore" ng-click="changeShow()">show less</a>
+          </div>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+
+<!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta charset="utf-8">
+  <title>Carolyn Bussey, User Experience Design</title>
+  <meta name="description" content="Potential styles for portfolio site">
+  <meta name="author" content="Carolyn Bussey">
+
+<!-- Mobile Specific Metas  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Muli:200,200i,800,800i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="./script.js" charset="utf-8"></script>
+
+<!-- CSS  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <!-- Favicon  <link rel="icon" type="image/png" href="images/favicon.png"> –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+
+<!-- Primary Page Layout –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--- Header and navigation   -->
+
+<div class= "banner">
+	   	<div class=" title">
+	   		<h1>
+	   			Carolyn Bussey
+	   		</h1>
+        <h6>user experience research &amp; design</h6>
+	   	</div>
+
+	   	<div class="navigation">
+		   	<ul>
+		   		<li> <a href="##about-title"> About</a> </li>
+		   		<li> <a href="##work-title"> Work </a> </li>
+		   		<li> <a href="##contact-title"> Contact </a>  </li>
+		   	</ul>
+		  </div>
+
+    <div class="mobile-nav-wrapper">
+    <div class="mobile-nav" id="about">
+      <p> about</p>
+    </div>
+    <div class="mobile-nav"  id="work">
+      <p> work</p>
+    </div>
+    <div class="mobile-nav" id="contact">
+      <p> contact</p>
+    </div>
+    </div>
+
+</div>
+
+
+<!--- Big Callout --->
+<div class="row body-section-1">
+  <hr class="accent1">
+  <h3 id="about-title"> About </h3>
+  <img src = "./images/1_timeline.svg" id="no-mobile">
+  <div class="container">
+    <div class="row">
+  	  	<div class="twelve columns big-text">
+          <h2 class="big-text">
+               Great design isn't easy. We're not all super-geniouses who can come up with the best idea off the cuff.
+               You don't need to wait for that flash of inspiration though - you can find real solutions by asking the people who know best - the users.
+          </h2>
+          <h2 class="big-text">
+    	         To create a great design, I start by asking questions. That’s how I identify the real problems. Next, I work with my other team members to brainstorm options that we can refine to the best solutions.
+          </h2>
+  	   	</div>
+      </div>
+    </div>
+</div>
+
+<!--- methods section --->
+<hr class="accent2">
+<h3 id="method-title"> Methods </h3>
+<div class="container">
+  <h2>
+    A great UX designer is never satisfied. For every question we answer - there's three more we uncover. That's why a great UX designer has many strategies and tactics for question asking and answering.
+  </h2>
+  <div class ="row">
+      <div class = "one-third column method">
+        <img src = "./images/iterative-design.svg">
+        <h5>Iterative Design Cycle</h5>
+        <p>The life-cycle  of a product goes research, design, testing, design, testing, design, testing, design...</p>
+      </div>
+
+    	<div class = "one-third column method">
+        <img src = "./images/facilitation.svg">
+        <h5>Workshop Facilitation</h5>
+        <p>Workshops can harness the collective know-how and creativity of the whole team. When you need to get everyone brainstorming and brewing up new ideas, you need a great facilitator to bring it together.</p>
+      </div>
+
+      <div class = "one-third column method">
+        <img src = "./images/new_rapid-prototyping.svg">
+        <h5>Rapid Prototyping</h5>
+        <p>Sometimes you need to try out a great idea as soon as possible. You might not have time for a fully functioning prototype. You might need a sketch or a powerpoint or a clickable axure prototype - what's important is getting something ready when you need it.</p>
+      </div>
+
+  </div>
+
+  <div class ="row">
+
+        <div class = "one-third column method">
+          <img src = "./images/interviewing.svg">
+          <h5>Think Aloud Interview</h5>
+          <p>Think aloud interviews are the bread and butter of user research. Find out what the users are thinking when they don't click the right button! </p>
+        </div>
+
+      	<div class = "one-third column method">
+          <img src = "./images/survey.svg">
+          <h5>Survey &amp; Data Analysis</h5>
+          <p>When you need to make a decision based on quantitative data, you need a good survey and a good analysis.</p>
+        </div>
+
+        <div class = "one-third column method">
+          <img src = "./images/new_coffee.svg">
+          <h5>Coffee Appreciation</h5>
+          <p>If you're making that nice ethopian in a french press how will you ever taste the tart, fruity flavor notes?</p>
+        </div>
+
+    </div>
+</div>
+
+<div class ="row work body-section-3">
+    <hr class="accent1">
+    <h3 id="work-title"> Work </h3>
+    <div id="projectDiv" ng-controller="projectController">
+      <ng-include src="activeTab"></ng-include>
+
+      <div class-"row more-projects">
+        <h3> More Projects </h3>
+        <div class="four columns" ng-click="changeTab('omulu')">
+          <img ng-if="!projectActive.omulu" class="image_fit_wide_thumb" src="./images/roda-bw.jpg">
+          <img ng-if="projectActive.omulu" class="image_fit_wide_thumb" src="./images/roda.jpg">
+          <h5>User Research Project</h5>
+          <p>Omulu capoeira is a small, but quickly growing martial arts school that needed help retaining new students.</p>
+        </div>
+
+        <div class="four columns" ng-click="changeTab('medicationTracker')">
+          <img ng-if="!projectActive.medicationTracker" class="image_fit_wide_thumb" src="./images/mms-bw.png">
+          <img ng-if="projectActive.medicationTracker" class="image_fit_wide_thumb" src="./images/mms.png">
+
+          <h5>Online Medication Tracker Evaluation</h5>
+          <p>Medication compliance is a major issue. It affects patients, health care providers and insurers.</p>
+        </div>
+
+        <div class="four columns"ng-click="changeTab('craftTracker')">
+          <img ng-if="!projectActive.craftTracker" class="image_fit_wide_thumb" src="./images/ct-banner-bw.png">
+          <img ng-if="projectActive.craftTracker" class="image_fit_wide_thumb" src="./images/ct-banner.png">
+          <h5>Iterative Prototyping: Micro Business Expense Tracker</h5>
+          <p>Conceptual application that helps creative entrepreneurs manage their inventory and expenses.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+	   	<!-- <div class="container sub-header">
+
+        <div class="background">
+          <div class="transbox">
+            <h3 class="layover">User Research: Omulu Capoeira</h3>
+          </div>
+
+        </div>
+
+      	<h4>
+	   			Assessing new student retention at Omulu Capoeira
+	   		</h4>
+        <h2>
+          Omulu capoeira is a small, but quickly growing martial arts school that needs help retaining new students.
+        </h2>
+        <p>
+        Omulu Capoeira was founded 7 years ago. They have come a long way since their beginning. Their first classes were held in rented rooms on the University of Minnesota campus and today they have their own studio space in Richfield. James Lynch and Jenny Blanchard are hoping to continue to grow their group so that it can become financially self-sustaining.
+        </p>
+        <p>
+        Omulu Capoeira has many people who come to try out a class. They have several avenues of attracting newcomers - from personal referrals, to online deals through Groupon and paper advertising through fliers and local newspapers. The challenge is retaining these new people. Many newcomers try a class or two and do not return. <a>read more</a>
+        </p>
+	   	</div> -->
+
+
+</div>
+
+<div class ="row contact">
+  <hr class="accent3">
+  <h3 id="contact-title"> Contact </h3>
+    <div class="row">
+      <div class="container">
+            <h2 class="big-text">
+               Thanks for stopping by - shoot me an email if your interested in talking to me further.
+          </h2>
+
+          <a href="mailto:buss0139@gmail.com?subject=From Website">Send me an email!</a>
+
+      </div>
+    </div>
+
+  </div>
+<hr class="accent2">
+<div class="footer">
+
+</div>
+
+
+</body>
+
+</html>
